@@ -21,7 +21,6 @@ class LoginScreen extends StatelessWidget {
        decoration: InputDecoration(
          hintText: 'you@example.com',
          labelText: 'Email Address',
-         errorText: 'Invalid Email Address',
        ),
      );
    }
