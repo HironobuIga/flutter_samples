@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import '../screens/login_screen.dart';
+import 'package:login_bloc/blocs/provider.dart';
 
 class App extends StatelessWidget {
   build(context) {
-    return MaterialApp(
+    return Provider(
+      child: MaterialApp(
       title: 'log me in',
       home: Scaffold(
         body: LoginScreen(),
       ),
+    ),
     );
   }
 }
