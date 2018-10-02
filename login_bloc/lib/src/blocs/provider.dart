@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_bloc/src/blocs/bloc.dart' show Bloc;
+import 'package:login_bloc/src/blocs/bloc.dart';
 
 class Provider extends InheritedWidget {
   final bloc = Bloc();
