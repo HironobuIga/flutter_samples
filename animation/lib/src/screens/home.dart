@@ -2,11 +2,24 @@ import 'package:flutter/material.dart';
 import '../widgets/cat.dart';
 
 class Home extends StatefulWidget {
+
   @override
   HomeState createState() => HomeState();
 }
 
-class HomeState extends State<Home> {
+class HomeState extends State<Home> with TickerProviderStateMixin {
+  Animation<double> catAnimation;
+  AnimationController catController;
+
+  initState() {
+    super.initState();
+
+    catController = AnimationController(
+      duration: Duration(seconds: 2),
+      vsync: this,
+    );
+  }
+
   Widget build(context) {
     return Scaffold(
       appBar: AppBar(
