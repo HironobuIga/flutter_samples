@@ -36,18 +36,20 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
 
   Widget build(context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Animation!"),
-      ),
-      body: GestureDetector(
-        child: Stack(
-          children: [
-            buildCatAnimation(),
-            buildBox(),
-          ],
+        appBar: AppBar(
+          title: Text("Animation!"),
         ),
-        onTap: onTap,
-      )
+        body: GestureDetector(
+          child: Center(
+              child: Stack(
+                children: [
+                  buildCatAnimation(),
+                  buildBox(),
+                ],
+              ),
+          ),
+          onTap: onTap,
+        )
     );
   }
 
@@ -69,6 +71,6 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
       height: 200.0,
       width: 200.0,
       color: Colors.brown,
-    )
+    );
   }
 }
