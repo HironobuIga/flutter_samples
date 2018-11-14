@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../widgets/cat.dart';
 
 class Home extends StatefulWidget {
-
   @override
   HomeState createState() => HomeState();
 }
@@ -15,10 +14,10 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
     super.initState();
 
     catController = AnimationController(
-      duration: Duration(seconds: 2),
+      duration: Duration(milliseconds: 200),
       vsync: this,
     );
-    catAnimation = Tween(begin: 0.0, end: 100.0).animate(
+    catAnimation = Tween(begin: -35.0, end: -80.0).animate(
       CurvedAnimation(
         parent: catController,
         curve: Curves.easeIn,
@@ -29,7 +28,7 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
   onTap() {
     if (catController.status == AnimationStatus.completed) {
       catController.reverse();
-    } else if (catController.status == AnimationStatus.dismissed){
+    } else if (catController.status == AnimationStatus.dismissed) {
       catController.forward();
     }
   }
@@ -41,16 +40,16 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
         ),
         body: GestureDetector(
           child: Center(
-              child: Stack(
-                children: [
-                  buildCatAnimation(),
-                  buildBox(),
-                ],
-              ),
+            child: Stack(
+              overflow: Overflow.visible,
+              children: [
+                buildCatAnimation(),
+                buildBox(),
+              ],
+            ),
           ),
           onTap: onTap,
-        )
-    );
+        ));
   }
 
   Widget buildCatAnimation() {
@@ -59,9 +58,9 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
       builder: (context, child) {
         return Positioned(
           child: child,
+          top: catAnimation.value,
           right: 0.0,
           left: 0.0,
-          bottom: catAnimation.value,
         );
       },
       child: Cat(),
