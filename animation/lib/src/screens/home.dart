@@ -10,9 +10,22 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> with TickerProviderStateMixin {
   Animation<double> catAnimation;
   AnimationController catController;
+  Animation<double> boxAnimation;
+  AnimationController boxController;
 
   initState() {
     super.initState();
+
+    boxController = AnimationController(
+      duration: Duration(seconds: 2),
+      vsync: this,
+    );
+
+    boxAnimation = Tween(begin: 0.0, end: pi).animate(
+      CurvedAnimation(
+          parent: boxController,
+          curve: Curves.linear),
+    );
 
     catController = AnimationController(
       duration: Duration(milliseconds: 200),
