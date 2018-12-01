@@ -27,7 +27,7 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
     ).animate(
       CurvedAnimation(
           parent: boxController,
-          curve: Curves.linear),
+          curve: Curves.easeInOut),
     );
     boxAnimation.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
@@ -51,6 +51,8 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
   }
 
   onTap() {
+    boxController.stop();
+
     if (catController.status == AnimationStatus.completed) {
       catController.reverse();
     } else if (catController.status == AnimationStatus.dismissed) {
@@ -137,7 +139,7 @@ class HomeState extends State<Home> with TickerProviderStateMixin {
           return Transform.rotate(
             child: child,
             alignment: Alignment.topRight,
-            angle: boxAnimation.value,
+            angle: -boxAnimation.value,
           );
         },
       ),
