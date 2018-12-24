@@ -74,8 +74,8 @@
       <file leaf-file-name="news_api_provider_test.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/resources/news_api_provider_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="268">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -152,6 +152,13 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="news" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -193,7 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Flutter Test.FetchItem returns item Model">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -212,6 +219,14 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="FetchItem returns item Model" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="FetchItem returns item Model" />
+      <option name="testFile" value="$PROJECT_DIR$/test/src/resources/news_api_provider_test.dart" />
+    </configuration>
+    <configuration name="FetchTopIds returns a list of ids" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="FetchTopIds returns a list of ids" />
+      <option name="testFile" value="$PROJECT_DIR$/test/src/resources/news_api_provider_test.dart" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -239,6 +254,17 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
     </configuration>
+    <list>
+      <item itemvalue="Flutter.main.dart" />
+      <item itemvalue="Flutter Test.FetchTopIds returns a list of ids" />
+      <item itemvalue="Flutter Test.FetchItem returns item Model" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.FetchItem returns item Model" />
+        <item itemvalue="Flutter Test.FetchTopIds returns a list of ids" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -259,7 +285,7 @@
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" id="Messages" order="5" visible="true" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Messages" order="5" visible="true" weight="0.32876712" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info id="Build Variants" order="1" side_tool="true" />
@@ -337,8 +363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/resources/news_api_provider_test.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="268">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
