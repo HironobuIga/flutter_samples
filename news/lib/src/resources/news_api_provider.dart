@@ -22,5 +22,13 @@ class NewsApiProvider {
 
     return ItemModel.fromJson(parsedJson);
   }
+}
 
+abstract class Source {
+  Future<List<int>> fetchTopIds();
+  Future<ItemModel> fetchItem(String id);
+}
+
+abstract class Cache {
+  Future<int> addItem(ItemModel item);
 }
