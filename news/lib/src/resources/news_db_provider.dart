@@ -9,6 +9,10 @@ import 'repsitory.dart';
 class NewsDbProvider implements Source, Cache {
   Database db;
 
+  NewsDbProvider() {
+    init();
+  }
+
   Future<List<int>> fetchTopIds() {
     return null;
   }
@@ -61,3 +65,5 @@ class NewsDbProvider implements Source, Cache {
     return db.insert("Items", item.toMap());
   }
 }
+
+final newsDbProvider = NewsDbProvider();
