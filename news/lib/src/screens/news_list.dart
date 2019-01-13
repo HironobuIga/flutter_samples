@@ -18,9 +18,12 @@ class NewsList extends StatelessWidget {
         return FutureBuilder(
           future: getFuture(),
           builder: (context, snapshot) {
-            return snapshot.hasData
-                ? Text('Im visible $index')
-                : Text('You cant see me $index');
+            return Container(
+              height: 80.0,
+              child: snapshot.hasData
+              ? Text('Im visible $index')
+              : Text('You cant see me $index')
+            );
           },
         );
       },
