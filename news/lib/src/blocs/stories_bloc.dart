@@ -3,10 +3,15 @@ import '../models/item_model.dart';
 import '../resources/repsitory.dart';
 
 class StoriesBloc {
+  final _repository = Repository();
   final _topIds = PublishSubject<List<int>>();
 
-  //   Getter to Streams
   Observable<List<int>> get topIds => _topIds.stream;
+
+  fetchTopIds() async {
+    final ids = await _repository.fetchTopIds();
+    _topIds.sink.add(ids);
+  }
 
   dispose() {
     _topIds.close();
