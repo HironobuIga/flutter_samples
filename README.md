@@ -1,6 +1,5 @@
 ## Udemyの講座の学習内容Output用Repository
-Dart and Flutter: The Complete Developer's Guide
-https://www.udemy.com/dart-and-flutter-the-complete-developers-guide/learn/v4/
+[Dart and Flutter: The Complete Developer's Guide](https://www.udemy.com/dart-and-flutter-the-complete-developers-guide/learn/v4/)
 
 ## 各ファイルの内容
 * animation - Flutter アニメーションに重点を置いた学習
