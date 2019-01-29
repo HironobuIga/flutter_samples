@@ -8,9 +8,19 @@ class StoriesBloc {
   final _topIds = PublishSubject<List<int>>();
   final _items = BehaviorSubject<int>();
 
+  Observable<Map<int, Future<ItemModel>>> items;
+
+  // StreamのGetter
   Observable<List<int>> get topIds => _topIds.stream;
 
+  // SinksのGetter
   Function(int) get fetchItem => _items.sink.add;
+
+  // Constructor
+  StoriesBloc() {
+    // transformerの実行を1回に制限する
+    items = _items.stream.transform(_itemsTransformer());
+  }
 
   fetchTopIds() async {
     final ids = await _repository.fetchTopIds();
