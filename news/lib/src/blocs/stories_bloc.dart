@@ -6,20 +6,20 @@ import '../resources/repsitory.dart';
 class StoriesBloc {
   final _repository = Repository();
   final _topIds = PublishSubject<List<int>>();
-  final _items = BehaviorSubject<int>();
-
-  Observable<Map<int, Future<ItemModel>>> items;
+  final _itemsOutput = BehaviorSubject<Map<int, Future<ItemModel>>>();
+  final _itemsFetcher = PublishSubject<int>();
 
   // StreamのGetter
   Observable<List<int>> get topIds => _topIds.stream;
 
   // SinksのGetter
-  Function(int) get fetchItem => _items.sink.add;
+  Function(int) get fetchItem => _itemsFetcher.sink.add;
+  Observable<Map<int, Future<ItemModel>>> get items => _itemsOutput.stream;
 
   // Constructor
   StoriesBloc() {
     // transformerの実行を1回に制限する
-    items = _items.stream.transform(_itemsTransformer());
+    _itemsFetcher.stream.transform(_itemsTransformer()).pipe(_itemsOutput);
   }
 
   fetchTopIds() async {
@@ -41,6 +41,7 @@ class StoriesBloc {
 
   dispose() {
     _topIds.close();
-    _items.close();
+    _itemsOutput.close();
+    _itemsFetcher.close();
   }
 }
