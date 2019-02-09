@@ -18,7 +18,6 @@ class StoriesBloc {
 
   // Constructor
   StoriesBloc() {
-    // transformerの実行を1回に制限する
     _itemsFetcher.stream.transform(_itemsTransformer()).pipe(_itemsOutput);
   }
 
