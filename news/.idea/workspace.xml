@@ -20,14 +20,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="news_list.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news_list.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/screens/news_list.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="375">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loading_container.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/src/widgets/loading_container.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -138,6 +147,7 @@
         <option value="$PROJECT_DIR$/lib/src/resources/repsitory.dart" />
         <option value="$PROJECT_DIR$/lib/src/models/item_model.dart" />
         <option value="$PROJECT_DIR$/lib/src/widgets/news_list_tile.dart" />
+        <option value="$PROJECT_DIR$/lib/src/widgets/loading_container.dart" />
       </list>
     </option>
   </component>
@@ -398,10 +408,10 @@
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32876712" />
       <window_info anchor="right" id="Flutter Outline" order="3" weight="0.25282714" />
       <window_info anchor="bottom" id="Logcat" order="3" />
-      <window_info id="Captures" order="2" />
+      <window_info id="Captures" order="2" weight="0.32956383" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.14943457" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18901454" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -456,7 +466,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -853,11 +863,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/screens/news_list.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="375">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/widgets/loading_container.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
