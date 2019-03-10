@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/app.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="390">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="26" selection-end-column="9" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -74,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_list_tile.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news_list_tile.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/widgets/news_list_tile.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+            <state relative-caret-position="524">
+              <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -161,10 +161,10 @@
         <option value="$PROJECT_DIR$/lib/src/resources/repsitory.dart" />
         <option value="$PROJECT_DIR$/lib/src/blocs/stories_bloc.dart" />
         <option value="$PROJECT_DIR$/lib/src/widgets/refresh.dart" />
-        <option value="$PROJECT_DIR$/lib/src/app.dart" />
         <option value="$PROJECT_DIR$/lib/src/screens/news_list.dart" />
         <option value="$PROJECT_DIR$/lib/src/screens/news_detail.dart" />
         <option value="$PROJECT_DIR$/lib/src/widgets/news_list_tile.dart" />
+        <option value="$PROJECT_DIR$/lib/src/app.dart" />
       </list>
     </option>
   </component>
@@ -867,16 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/app.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/widgets/loading_container.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -913,10 +903,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/widgets/news_list_tile.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+        <state relative-caret-position="524">
+          <caret line="57" column="3" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/app.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
