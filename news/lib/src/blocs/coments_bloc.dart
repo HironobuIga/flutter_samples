@@ -24,6 +24,7 @@ class CommentsBloc {
               cache[id].then((ItemModel item) {
                 item.kids.forEach((kidId) => fetchItemWithcomments(kidId));
               });
+              return cache;
         },
         <int, Future<ItemModel>> { }
     );
