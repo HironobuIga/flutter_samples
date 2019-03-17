@@ -28,7 +28,7 @@ class App extends StatelessWidget {
           builder: (context) {
             final commentsBloc = CommentsProvider.of(context);
             final itemId = int.parse(settings.name.replaceFirst('/', ''));
-            
+
             commentsBloc.fetchItemWithcomments(itemId);
 
             return NewsDetail(
