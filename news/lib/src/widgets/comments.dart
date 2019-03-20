@@ -10,7 +10,16 @@ class Comments extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
+    return FutureBuilder(
+      future: itemMap[itemId],
+      builder: (context, AsyncSnapshot snapshot) {
+        if (!snapshot.hasData) {
+          return Text('ロード中');
+        }
+
+        return Text(snapshot.data.text);
+      },
+    );
   }
 
 }
