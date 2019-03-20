@@ -36,10 +36,20 @@ class NewsDetail extends StatelessWidget {
               return Text('通信中');
             }
 
-            return buildTitle(itemSnapshot.data);
+
+            return buildList(itemSnapshot.data, snapshot.data);
           },
         );
       },
+    );
+  }
+
+  Widget buildList(ItemModel item, Map<int, Future<ItemModel>> itemMap) {
+    return ListView(
+      children: <Widget>[
+        buildTitle(item),
+        
+      ],
     );
   }
 
