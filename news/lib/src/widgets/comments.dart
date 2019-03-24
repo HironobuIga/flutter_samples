@@ -5,8 +5,9 @@ import '../models/item_model.dart';
 class Comments extends StatelessWidget {
   final int itemId;
   final Map<int, Future<ItemModel>> itemMap;
+  final int depth;
 
-  Comments({this.itemId, this.itemMap});
+  Comments({this.itemId, this.itemMap, this.depth});
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +22,17 @@ class Comments extends StatelessWidget {
         final children = <Widget>[
           ListTile(
             title: Text(item.text),
-            subtitle: Text(item.by),
+            subtitle: item.by == "" ? Text('削除済み') : Text(item.by),
+            contentPadding: EdgeInsets.only(
+              right: 16.0,
+              left: depth * 16.0,
+            ),
           ),
           Divider(),
         ];
         item.kids.forEach((kidId) {
           children.add(
-            Comments(itemId: kidId, itemMap: itemMap)
+            Comments(itemId: kidId, itemMap: itemMap, depth: this.depth + 1)
           );
         });
 

@@ -49,7 +49,7 @@ class NewsDetail extends StatelessWidget {
     final children = <Widget>[];
     children.add(buildTitle(item));
     final commentsList = item.kids.map( (commentId) {
-      return Comments(itemId: commentId, itemMap: itemMap);
+      return Comments(itemId: commentId, itemMap: itemMap, depth: 1);
     }).toList();
     children.addAll(commentsList);
 
