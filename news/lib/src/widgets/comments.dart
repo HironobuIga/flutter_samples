@@ -21,7 +21,7 @@ class Comments extends StatelessWidget {
         final item = snapshot.data;
         final children = <Widget>[
           ListTile(
-            title: Text(item.text),
+            title: buildText(item),
             subtitle: item.by == "" ? Text('削除済み') : Text(item.by),
             contentPadding: EdgeInsets.only(
               right: 16.0,
@@ -43,4 +43,12 @@ class Comments extends StatelessWidget {
     );
   }
 
+  Widget buildText(ItemModel item) {
+    final text = item.text
+        .replaceAll('&#x27;', "'")
+        .replaceAll('<p>', '\n\n')
+        .replaceAll('</p>', '');
+
+    return Text(text);
+  }
 }
